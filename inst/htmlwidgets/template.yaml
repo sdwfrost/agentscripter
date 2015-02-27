@@ -1,0 +1,15 @@
+dependencies:
+  - name: jquery
+    version: 2.1.3
+    src: "htmlwidgets/lib/jquery"
+    script: jquery.min.js
+
+  - name: dat-gui
+    version: 0.1
+    src: "htmlwidgets/lib/dat-gui"
+    script: dat.gui.min.js
+
+  - name: agentscript
+    version: 0.1
+    src: "htmlwidgets/lib/agentscript"
+    script: agentscript.min.js

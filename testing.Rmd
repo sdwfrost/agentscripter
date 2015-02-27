@@ -1,0 +1,32 @@
+---
+title: "Testing agentscripter"
+author: "Simon Frost"
+date: "27/02/2015"
+output: html_document
+---
+
+```{r}
+devtools::document()
+devtools::install()
+```
+
+```{r}
+library(htmltools)
+library(js)
+library(V8)
+library(agentscripter)
+```
+
+```{r}
+model <- readLines("template.coffee")
+```
+
+```{r}
+model.js <- coffee_compile(model)
+```
+
+```{r}
+template(model.js)
+```
+
+
